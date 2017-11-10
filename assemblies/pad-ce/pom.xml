@@ -72,23 +72,6 @@
           </execution>
         </executions>
       </plugin>
-
-      <plugin>
-        <phase>deploy</phase>
-        <goals>
-          <goal>deploy</goal>
-        </goals>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.8</version>
-        <extensions>true</extensions>
-        <configuration>
-          <nexusUrl>http://nexus.pentaho.org/</nexusUrl>
-          <serverId>pentaho</serverId>
-          <stagingProfileId>11864e75016a2f</stagingProfileId>
-        </configuration>
-      </plugin>      
-
     </plugins>
   </build>
 </project>
